@@ -4,7 +4,6 @@ title: "**Laderas y MIAF**"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
-runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
