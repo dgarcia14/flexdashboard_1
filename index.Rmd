@@ -22,10 +22,10 @@ library(tibble)
 
 
 
-mun <- read_sf("./capas/mun.geojson")
-na <- read_sf("./capas/na_totikes.geojson")
-m <- read_sf("./capas/miaf1.geojson")
-lad <- read_sf("./capas/laderas.geojson")
+mun <- read_sf("./docs/mun.geojson")
+na <- read_sf("./docs/na_totikes.geojson")
+m <- read_sf("./docs/miaf1.geojson")
+lad <- read_sf("./docs/laderas.geojson")
 
 dflad <- as.data.frame.matrix(table(lad$nom_mun,lad$tipo_slp))
 dflad <- tibble::rownames_to_column(dflad, "nom_mun")
